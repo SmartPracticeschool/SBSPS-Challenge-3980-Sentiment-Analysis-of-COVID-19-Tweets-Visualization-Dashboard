@@ -1,0 +1,1432 @@
+[
+    {
+        "id": "d671377f.d4d748",
+        "type": "tab",
+        "label": "Store Tweets",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "555ee41a.6faddc",
+        "type": "cloudant",
+        "z": "",
+        "host": "95a3cbad-a6ef-4708-971c-324c378ff583-bluemix.cloudant.com",
+        "name": ""
+    },
+    {
+        "id": "3d33957c.fadb9a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Twitter Analytics",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "42fcc045.607d",
+        "type": "twitter-credentials",
+        "z": "",
+        "screen_name": "Jahnavi_30"
+    },
+    {
+        "id": "a2e9d30a.82b2a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#b3d3db",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "327fd344.a47a5c",
+        "type": "cloudant",
+        "z": "",
+        "host": "95a3cbad-a6ef-4708-971c-324c378ff583-bluemix.cloudant.com",
+        "name": ""
+    },
+    {
+        "id": "14d8d865.22d408",
+        "type": "ui_group",
+        "z": "",
+        "name": "Twitter Analytics",
+        "tab": "1fc6e2b2.1393bd",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "23d0c55a.9f5e5a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Tweet",
+        "tab": "1fc6e2b2.1393bd",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": false
+    },
+    {
+        "id": "1fc6e2b2.1393bd",
+        "type": "ui_tab",
+        "z": "",
+        "name": "TWITTER SENTIMENT ANALYSIS - Lockdown Extension",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "19a3d300.56649d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Tweet Details Table",
+        "tab": "1fc6e2b2.1393bd",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "e116746b.d85818",
+        "type": "ui_group",
+        "z": "",
+        "name": "Participantes",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "7c5a6a3a.c88014",
+        "type": "ui_group",
+        "z": "",
+        "name": "Último usuario",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "56fdbd98.0cdd34",
+        "type": "ui_group",
+        "z": "",
+        "name": "Texto",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "73c11623.bb7fa8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Global Tweets",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "de3dbad0.0b90c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Global Tweet Map",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "ec46a108.6b82",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "Positive Tweet debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e75c966c.6c3898",
+        "type": "switch",
+        "z": "d671377f.d4d748",
+        "name": "Positive / Negative Tweets",
+        "property": "sentiment.score",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "ec46a108.6b82"
+            ],
+            [
+                "11c0e499.02475b"
+            ],
+            [
+                "51105d9a.baa2b4"
+            ]
+        ]
+    },
+    {
+        "id": "7a1bbae2.88f4a4",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "msg.sentiment.score",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "sentiment.score",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e50e5119.2ef9f",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "msg.tweet details",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "tweet",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "791b9b1f.9bb934",
+        "type": "sentiment",
+        "z": "d671377f.d4d748",
+        "name": "Sentiment of Tweets",
+        "property": "payload",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "7a1bbae2.88f4a4",
+                "e75c966c.6c3898",
+                "80401bca.649938",
+                "a27137b2.ce1218"
+            ]
+        ]
+    },
+    {
+        "id": "51105d9a.baa2b4",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "Negative Tweets",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "dcf78fea.1bc36",
+        "type": "function",
+        "z": "d671377f.d4d748",
+        "name": "Remove URLS and replace #",
+        "func": "var tweet = msg.tweet.text;\nvar newtweet = tweet.replace(/#/g, \" Hash tag \");\n\n// regex from https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript\nmsg.payload = newtweet.replace( /(([a-z]+:\\/\\/)?(([a-z0-9\\-]+\\.)+([a-z]{2}|biz|com|co|edu|gov|info|net|org|ly))(:[0-9]{1,5})?(\\/[a-z0-9_\\-\\.~]+)*(\\/([a-z0-9_\\-\\.]*)(\\?[a-z0-9+_\\-\\.%=&amp;]*)?)?(#[a-zA-Z0-9!$&'()*+.=-_~:@/?]*)?)(\\s+|$)/gi, \"see short URL \" );\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "b28ecc7f.2022c",
+                "791b9b1f.9bb934",
+                "27d61f63.742f2"
+            ]
+        ]
+    },
+    {
+        "id": "b28ecc7f.2022c",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d63c8970.b5bf58",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "tweet.text",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "80401bca.649938",
+        "type": "function",
+        "z": "d671377f.d4d748",
+        "name": "Store Tweet data",
+        "func": "// tweet object includes a timestamp_ms\nmsg.payload = { \"timestamp\" : msg.tweet.timestamp_ms ,\n                \"tweet\"     : msg.tweet.text,\n                \"sentiment\" : msg.sentiment.score};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "982bd891.d281b8",
+                "6fd609ba.003a18"
+            ]
+        ]
+    },
+    {
+        "id": "7355424a.e0a28c",
+        "type": "comment",
+        "z": "d671377f.d4d748",
+        "name": "Pick a #hashtag to follow",
+        "info": "",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6fd609ba.003a18",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "139fdb1e.9dd275",
+        "type": "twitter in",
+        "z": "d671377f.d4d748",
+        "twitter": "42fcc045.607d",
+        "tags": "#lockdownextension",
+        "user": "false",
+        "name": "Listen to twitter feed",
+        "inputs": 1,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "e50e5119.2ef9f",
+                "d63c8970.b5bf58",
+                "dcf78fea.1bc36"
+            ]
+        ]
+    },
+    {
+        "id": "982bd891.d281b8",
+        "type": "cloudant out",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "cloudant": "555ee41a.6faddc",
+        "database": "tweetdata",
+        "service": "node-red-uievn-cloudant-1594574613839-62087",
+        "payonly": true,
+        "operation": "insert",
+        "x": 620,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "823ccb26.c1a248",
+        "type": "cloudant in",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "cloudant": "327fd344.a47a5c",
+        "database": "tweetdata",
+        "service": "node-red-uievn-cloudant-1594574613839-62087",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 1100,
+        "y": 620,
+        "wires": [
+            [
+                "234d894a.469e56",
+                "59b284a3.6cebcc",
+                "2f8438e7.077568"
+            ]
+        ]
+    },
+    {
+        "id": "234d894a.469e56",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1310,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "59b284a3.6cebcc",
+        "type": "function",
+        "z": "d671377f.d4d748",
+        "name": "Build a piechart",
+        "func": "var Tweets = \"\\\"timestamp\\\",\\\"tweet\\\",\\\"sentiment\\\"\\n\";\nvar pos = 0;\nvar neg = 0;\nvar neutral =0;\n\nfor( i=0;i<msg.payload.length;i++) {\n    if( typeof ( msg.payload[i].sentiment ) != \"undefined\") {    \n        if( msg.payload[i].sentiment > 0 ) {\n            pos++;\n        } else if( msg.payload[i].sentiment < 0 ) {\n            neg++;\n        } else {\n            neutral++;\n        }\n    }\n}\n\nvar pie={ \"labels\" : [\"Positive\",\"Negative\",\"Neutral\"],\n          \"series\" : [\"Positive\",\"Negative\",\"Neutral\"],\n          \"data\"   : [ [pos, neg, neutral] ]\n        };\nmsg.payload = [pie];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1300,
+        "y": 620,
+        "wires": [
+            [
+                "8bf88f11.2546f",
+                "feaf0f8b.82687"
+            ]
+        ]
+    },
+    {
+        "id": "5a1295b5.c4d97c",
+        "type": "ui_button",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "group": "14d8d865.22d408",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Analyze stored tweets",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 900,
+        "y": 600,
+        "wires": [
+            [
+                "823ccb26.c1a248"
+            ]
+        ]
+    },
+    {
+        "id": "8bf88f11.2546f",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1550,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b09716c3.4a3248",
+        "type": "inject",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 940,
+        "y": 640,
+        "wires": [
+            [
+                "823ccb26.c1a248"
+            ]
+        ]
+    },
+    {
+        "id": "feaf0f8b.82687",
+        "type": "ui_chart",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "group": "14d8d865.22d408",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "label": "Sentiment Pie Chart",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "0",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#97dc89",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1580,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a27137b2.ce1218",
+        "type": "delay",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "c9113bfa.5c6268",
+                "5586147b.f2347c"
+            ]
+        ]
+    },
+    {
+        "id": "42eebdff.6f7d54",
+        "type": "ui_text",
+        "z": "d671377f.d4d748",
+        "group": "23d0c55a.9f5e5a",
+        "order": 1,
+        "width": "9",
+        "height": "1",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 530,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "95375eeb.bc129",
+        "type": "ui_gauge",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "group": "14d8d865.22d408",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "gtype": "gage",
+        "title": "Sentiment Guage",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 590,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a134c6ee.396798",
+        "type": "ui_chart",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "group": "23d0c55a.9f5e5a",
+        "order": 2,
+        "width": "11",
+        "height": "5",
+        "label": "Tweet Sentiment History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-10",
+        "ymax": "10",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9113bfa.5c6268",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tweet.text",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "42eebdff.6f7d54"
+            ]
+        ]
+    },
+    {
+        "id": "5586147b.f2347c",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sentiment.score",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "95375eeb.bc129",
+                "a134c6ee.396798"
+            ]
+        ]
+    },
+    {
+        "id": "2f8438e7.077568",
+        "type": "function",
+        "z": "d671377f.d4d748",
+        "name": "Build Table",
+        "func": "var TableArray = [];\nfor( i=0; i < msg.payload.length; i++ ) {\n      var TableEntry = {};\n      var ts = new Date(parseInt(msg.payload[i].timestamp));\n      TableEntry.time = ts.toUTCString() ;\n      TableEntry.sentiment = msg.payload[i].sentiment ;\n      TableEntry.tweet = msg.payload[i].tweet ;\n      TableArray.push( TableEntry );\n}\n\nmsg.payload = TableArray;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1210,
+        "y": 700,
+        "wires": [
+            [
+                "d901425e.c6b8f",
+                "6ede1ba7.08a56c"
+            ]
+        ]
+    },
+    {
+        "id": "d901425e.c6b8f",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1390,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6ede1ba7.08a56c",
+        "type": "ui_table",
+        "z": "d671377f.d4d748",
+        "group": "19a3d300.56649d",
+        "name": "Tweets Table",
+        "order": 1,
+        "width": "12",
+        "height": "7",
+        "columns": [
+            {
+                "field": "time",
+                "title": "Timestamp",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sentiment",
+                "title": "Sentiment",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "tweet",
+                "title": "Tweet",
+                "width": "50%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1410,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "11c0e499.02475b",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "Neutral Tweets",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "27d61f63.742f2",
+        "type": "natural-language-understanding",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "categories": false,
+        "limitcategories": "3",
+        "concepts": false,
+        "maxconcepts": "8",
+        "doc-emotion": true,
+        "doc-emotion-target": "",
+        "doc-sentiment": true,
+        "doc-sentiment-target": "",
+        "entity": true,
+        "entity-emotion": false,
+        "entity-sentiment": false,
+        "maxentities": "50",
+        "keyword": false,
+        "keyword-emotion": false,
+        "keyword-sentiment": false,
+        "maxkeywords": "50",
+        "metadata": false,
+        "relation": true,
+        "semantic": false,
+        "semantic-entities": false,
+        "semantic-keywords": false,
+        "maxsemantics": "50",
+        "limittextcharacters": "",
+        "syntax": false,
+        "syntax-sentences": false,
+        "syntax-tokens-lemma": false,
+        "syntax-tokens-pos": false,
+        "service-endpoint": "https://api.eu-gb.natural-language-understanding.watson.cloud.ibm.com/instances/559a0f21-9d71-4b21-9f20-cbebefc7de5e",
+        "x": 940,
+        "y": 140,
+        "wires": [
+            [
+                "6a560d8b.f96bc4",
+                "6956b4e2.b4ae3c",
+                "542a4c3f.ccfe34",
+                "c79a6d7c.e061",
+                "dd43c580.113a68",
+                "2e8312ae.ae185e"
+            ]
+        ]
+    },
+    {
+        "id": "6a560d8b.f96bc4",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "features",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6956b4e2.b4ae3c",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "Anger",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Anger",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "features.emotion.document.emotion.anger",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 100,
+        "wires": [
+            [
+                "524e2e0d.28fc3"
+            ]
+        ]
+    },
+    {
+        "id": "542a4c3f.ccfe34",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "Disgust",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Disgust",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "features.emotion.document.emotion.disgust",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 140,
+        "wires": [
+            [
+                "524e2e0d.28fc3"
+            ]
+        ]
+    },
+    {
+        "id": "c79a6d7c.e061",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "Joy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Joy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "features.emotion.document.emotion.joy",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 180,
+        "wires": [
+            [
+                "524e2e0d.28fc3"
+            ]
+        ]
+    },
+    {
+        "id": "dd43c580.113a68",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "Sadness",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Sadness",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "features.emotion.document.emotion.sadness",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 220,
+        "wires": [
+            [
+                "524e2e0d.28fc3"
+            ]
+        ]
+    },
+    {
+        "id": "2e8312ae.ae185e",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "Fear",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Fear",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "features.emotion.document.emotion.fear",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 260,
+        "wires": [
+            [
+                "524e2e0d.28fc3"
+            ]
+        ]
+    },
+    {
+        "id": "524e2e0d.28fc3",
+        "type": "ui_chart",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "group": "23d0c55a.9f5e5a",
+        "order": 3,
+        "width": "11",
+        "height": "5",
+        "label": "Tweet Emotion Analysis",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1550,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f00817.249468",
+        "type": "watson-language-translator-identify",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "service-endpoint": "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/12184cf0-fb17-4218-9c7f-025c04480260",
+        "x": 990,
+        "y": 500,
+        "wires": [
+            [
+                "e2a1b191.1b371",
+                "5aaa3169.345aa8"
+            ]
+        ]
+    },
+    {
+        "id": "5aaa3169.345aa8",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2d43df51.3aaff",
+        "type": "catch",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "scope": [
+            "27d61f63.742f2"
+        ],
+        "uncaught": false,
+        "x": 830,
+        "y": 400,
+        "wires": [
+            [
+                "9bcc0288.fe5a68"
+            ]
+        ]
+    },
+    {
+        "id": "7ffb6d79.d7a654",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a961d021.53ee8",
+        "type": "switch",
+        "z": "d671377f.d4d748",
+        "name": "UnSupported Language? ",
+        "property": "error.message",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "unsupported text language:",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1190,
+        "y": 420,
+        "wires": [
+            [
+                "7f00817.249468"
+            ]
+        ]
+    },
+    {
+        "id": "9bcc0288.fe5a68",
+        "type": "rbe",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 970,
+        "y": 400,
+        "wires": [
+            [
+                "7ffb6d79.d7a654",
+                "a961d021.53ee8"
+            ]
+        ]
+    },
+    {
+        "id": "e2a1b191.1b371",
+        "type": "change",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "srclang",
+                "pt": "msg",
+                "to": "languages[0].language",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "destlang",
+                "pt": "msg",
+                "to": "en",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "error",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "watsonerror",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 480,
+        "wires": [
+            [
+                "31ef7bde.27c114"
+            ]
+        ]
+    },
+    {
+        "id": "ec5f5a23.e8d2b8",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "translation",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "653f3e0e.980278",
+        "type": "debug",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1670,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "de59f13b.803668",
+        "type": "inject",
+        "z": "d671377f.d4d748",
+        "name": "Inject sample Hindi Tweet",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "RT @UJJWALKUMAR947: बिहार के माननीय मुख्यमंत्री श्री @NitishKumar सर आप से नरम निवेदन है कि हमारे राज्य #बिहार में फिर से समस्त #lockdown ब",
+        "payloadType": "str",
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "27d61f63.742f2"
+            ]
+        ]
+    },
+    {
+        "id": "31ef7bde.27c114",
+        "type": "watson-translator",
+        "z": "d671377f.d4d748",
+        "name": "",
+        "action": "translate",
+        "basemodel": "ar-en",
+        "domain": "general",
+        "srclang": "en",
+        "destlang": "he",
+        "password": "",
+        "apikey": "bPpIqL-LIa3KzSiqfFDwn2AMEbrKezlIYvKuH5sqFK6J",
+        "custom": "",
+        "domainhidden": "general",
+        "srclanghidden": "en",
+        "destlanghidden": "he",
+        "basemodelhidden": "ar-en",
+        "customhidden": "",
+        "filetype": "forcedglossary",
+        "trainid": "",
+        "lgparams2": true,
+        "service-endpoint": "https://api.eu-gb.language-translator.watson.cloud.ibm.com/instances/12184cf0-fb17-4218-9c7f-025c04480260",
+        "x": 1430,
+        "y": 480,
+        "wires": [
+            [
+                "ec5f5a23.e8d2b8",
+                "653f3e0e.980278",
+                "27d61f63.742f2"
+            ]
+        ]
+    }
+]
